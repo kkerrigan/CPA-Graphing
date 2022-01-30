@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:KKerrigan_Graphing">
+
+    <SolidColorBrush x:Key="WindowBackground">#FCFBE3</SolidColorBrush>
+    <SolidColorBrush x:Key="GraphTitle">Crimson</SolidColorBrush>
+    <SolidColorBrush x:Key="AxisTitle">Blue</SolidColorBrush>
+    <SolidColorBrush x:Key="Success">Green</SolidColorBrush>
+    <FontFamily x:Key="ApplicationFont">Helvetica</FontFamily>
+
+    <Style x:Key="StatusBarStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="Foreground" Value="{StaticResource Success}" />
+    </Style>
+
+    <Style TargetType="{x:Type StatusBar}">
+        <Setter Property="Background" Value="{StaticResource WindowBackground}" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGrid}">
+        <Setter Property="Background" Value="{StaticResource WindowBackground}" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGridRow}">
+        <Setter Property="Background" Value="BlanchedAlmond"/>
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="DarkGreen" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="GraphLabel" TargetType="{x:Type Label}">
+        <Setter Property="Foreground" Value="{StaticResource GraphTitle}"/>
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="YAxisLabel" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="{StaticResource AxisTitle}" />
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="XAxisLabel" TargetType="{x:Type Label}">
+        <Setter Property="Foreground" Value="{StaticResource AxisTitle}" />
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="ShowLabels" TargetType="{x:Type Label}">
+        <Setter Property="Foreground" Value="Crimson" />
+        <Setter Property="FontFamily" Value="{StaticResource ApplicationFont}" />
+        <Setter Property="FontSize" Value="11" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Width" Value="100" />
+    </Style>
+
+</ResourceDictionary>
